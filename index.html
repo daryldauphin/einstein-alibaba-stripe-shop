@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luma Atelier | Elevated Essentials</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafaf7; color: #1a1a1a; }
+html { scroll-behavior: smooth; }
+
+nav { position: sticky; top: 0; background: white; border-bottom: 1px solid #e5e5e0; z-index: 50; }
+.nav-content { max-width: 1200px; margin: 0 auto; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 18px; font-weight: 600; color: #8b6f47; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { color: #666; text-decoration: none; font-size: 14px; transition: color 0.2s; }
+.nav-links a:hover { color: #8b6f47; }
+
+.hero { background: linear-gradient(135deg, #f5f0e8 0%, #fafaf7 100%); padding: 80px 20px; text-align: center; }
+.hero-content { max-width: 800px; margin: 0 auto; }
+.hero h1 { font-size: 56px; font-weight: 600; line-height: 1.2; margin-bottom: 16px; color: #1a1a1a; }
+.hero p { font-size: 18px; color: #666; line-height: 1.6; }
+
+section { padding: 100px 20px; }
+.container { max-width: 1200px; margin: 0 auto; }
+
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-left h2 { font-size: 32px; font-weight: 600; margin-bottom: 20px; color: #1a1a1a; }
+.about-left p { font-size: 16px; color: #666; line-height: 1.8; margin-bottom: 16px; }
+.stats { display: flex; gap: 40px; margin-top: 32px; }
+.stat { }
+.stat-number { font-size: 28px; font-weight: 600; color: #8b6f47; }
+.stat-label { font-size: 13px; color: #999; margin-top: 4px; }
+
+.about-image { background: #e8e0d5; border-radius: 8px; height: 400px; display: flex; align-items: center; justify-content: center; font-size: 120px; }
+
+#shop { background: #fafaf7; }
+.shop-title { font-size: 32px; font-weight: 600; text-align: center; margin-bottom: 60px; color: #1a1a1a; }
+
+.products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+.product { background: white; border: 1px solid #e5e5e0; border-radius: 8px; overflow: hidden; transition: all 0.2s ease; }
+.product:hover { border-color: #8b6f47; box-shadow: 0 4px 12px rgba(139, 111, 71, 0.1); }
+
+.product-image { background: #e8e0d5; height: 240px; display: flex; align-items: center; justify-content: center; font-size: 80px; }
+.product-info { padding: 24px; }
+.product h3 { margin: 0 0 8px 0; font-size: 16px; font-weight: 600; color: #1a1a1a; }
+.product p { margin: 0 0 16px 0; font-size: 13px; color: #888; line-height: 1.5; }
+
+.product-footer { display: flex; justify-content: space-between; align-items: center; }
+.product-price { font-size: 20px; font-weight: 600; color: #8b6f47; }
+.buy-btn { background: #8b6f47; color: white; padding: 10px 20px; border: none; border-radius: 6px; font-size: 14px; font-weight: 500; text-decoration: none; cursor: pointer; transition: background 0.2s; }
+.buy-btn:hover { background: #6d5639; }
+
+footer { background: white; border-top: 1px solid #e5e5e0; padding: 40px 20px; text-align: center; color: #999; font-size: 13px; }
+footer p { margin: 0 0 12px 0; }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 36px; }
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-image { height: 300px; }
+  .stats { flex-wrap: wrap; gap: 20px; }
+  .nav-links { gap: 16px; font-size: 13px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-content">
+    <div class="logo">Luma Atelier</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#shop">Shop</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Elevated essentials, made to feel effortless.</h1>
+    <p>Discover a thoughtfully chosen product presented with a clean, modern experience. The goal is simple: make the value clear, the impression memorable, and the next step easy.</p>
+  </div>
+</section>
+
+<section id="about" style="background: white;">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <h2>Why this product stands out</h2>
+        <p>We believe great products do not need to be complicated. This item is presented with a refined, focused experience that highlights its appeal and makes the offer feel easy to trust.</p>
+        <p>From the first glance to the final click, the message stays clear: this is a product worth noticing.</p>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-number">Premium</div>
+            <div class="stat-label">First impression</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">Everyday</div>
+            <div class="stat-label">Value and relevance</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">Effortless</div>
+            <div class="stat-label">Customer experience</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">🧴</div>
+    </div>
+  </div>
+</section>
+
+<section id="shop">
+  <div class="container">
+    <h2 class="shop-title">A refined first impression</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto 40px; color:#666; line-height:1.7;">This product is presented with clarity and confidence, giving visitors a reason to pause, explore, and take the next step.</p>
+    <div class="products-grid">
+      <div class="product">
+        <div class="product-image">🛍️</div>
+        <div class="product-info">
+          <h3>The everyday essential</h3>
+          <p>Designed to stand out with a modern feel and a clear value proposition. This is the product experience we want visitors to remember.</p>
+          <div class="product-footer">
+            <span class="product-price">Explore now</span>
+            <a href="https://www.alibaba.com/product-detail/subject_1601833181107.html?from=share&ckvia=share_b9a999b93e5b4b928d81334b7fe00213" class="buy-btn" target="_blank">View Product</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Luma Atelier.</p>
+  <p style="font-size: 12px;">A single-product storefront crafted for clarity, confidence, and conversion.</p>
+</footer>
+
+</body>
+</html>
